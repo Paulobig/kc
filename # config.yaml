@@ -1,0 +1,20 @@
+# config.yml (Relevant Sections)
+
+economic:
+  interval:
+    days_2: 7  # Upkeep every 7 days 
+    time: '23:00:00' # Time of day for upkeep collection - AS DESIRED
+    change-cooldown_time: 0.1d # Cooldown for changing tax/upkeep - KEEP AS DESIRED
+
+upkeep:
+  per-chunk: 0.214  # 1.5 gold/chunk/week
+  unclaim: false     # Disables automatic chunk unclaiming if upkeep not paid - CORRECT
+  nopay_time: 7d    # 7-day grace period for new Lands 
+  upkeep-reminder_time: 1h # Land member reminder frequency - KEEP AS DESIRED
+
+chunk:
+  costs_2: 5.0      # One-time cost to claim a chunk 
+
+economy:
+    vault:
+      enabled_10: true # Make sure Vault economy is enabled! - ESSENTIAL

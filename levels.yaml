@@ -1,0 +1,378 @@
+general:
+  # If enabled, lands and nations won't downgrade, if they no longer meet their current level requirements.
+  keep-level: true
+
+land:
+  enabled: true
+  levels:
+    1:
+      title: 'Settlement'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 50
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -37.5
+        money:
+          description: '&7{value} gold'
+          value: 50
+      commands:
+          reached: []
+          down: []
+    2:
+      title: 'Hamlet'
+      requirements:
+        members:
+          required: 5
+          title: 'Trust {req} Players'
+          description:
+            - '&7Trust {req} players in this land.'
+            - '&7Command: &e/lands trust'
+        chunks:
+          required: 15 
+          title: 'Claim {req} Chunks'
+          description:
+            - '&7Claim {req} chunks for this land. &c&lRequires a total of &4&l%math_{req}*5%&c&l chunks to level up!'
+            - '&7Command: &e/claim'
+        balance:
+          required: 750
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited into this land bank.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 70
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -33.3
+        money:
+          description: '&7{value} gold'
+          value: 150
+      commands:
+          reached: []
+          down: []
+    3:
+      title: 'Village'
+      requirements:
+        members:
+          required: 13
+          title: 'Trust {req} Players'
+          description:
+            - '&7Trust {req} players in this land.'
+            - '&7Command: &e/lands trust'
+        chunks:
+          required: 39 
+          title: 'Claim {req} Chunks'
+          description:
+            - '&7Claim {req} chunks for this land. &c&lRequires a total of &4&l%math_{req}*5%&c&l chunks to level up!'
+            - '&7Command: &e/claim'
+        balance:
+          required: 1500
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited into this land bank.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 100
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -29.2
+        money:
+          description: '&7{value} gold'
+          value: 300
+      commands:
+          reached: []
+          down: []
+    4:
+      title: 'Town'
+      requirements:
+        members:
+          required: 21
+          title: 'Trust {req} Players'
+          description:
+            - '&7Trust {req} players in this land.'
+            - '&7Command: &e/lands trust'
+        chunks:
+          required: 63 
+          title: 'Claim {req} Chunks'
+          description:
+            - '&7Claim {req} chunks for this land. &c&lRequires a total of &4&l%math_{req}*5%&c&l chunks to level up!'
+            - '&7Command: &e/claim'
+        balance:
+          required: 4000
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited into this land bank.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 200
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -20
+        money:
+          description: '&7{value} gold'
+          value: 500
+      commands:
+          reached:
+            - 'broadcast %lands_land% has reached Level 4!'
+          down: []
+    5:
+      title: 'City'
+      requirements:
+        members:
+          required: 35
+          title: 'Trust {req} Players'
+          description:
+            - '&7Trust {req} players in this land.'
+            - '&7Command: &e/lands trust'
+        chunks:
+          required: 105
+          title: 'Claim {req} Chunks'
+          description:
+            - '&7Claim {req} chunks for this land. &c&lRequires a total of &4&l%math_{req}*5%&c&l chunks to level up!'
+            - '&7Command: &e/claim'
+        balance:
+          required: 5500
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited into this land bank.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 400
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -15
+        money:
+          description: '&7{value} gold'
+          value: 750
+      commands:
+          reached: []
+          down: []
+    6:
+      title: 'Citadel'
+      requirements:
+        members:
+          required: 48
+          title: 'Trust {req} Players'
+          description:
+            - '&7Trust {req} players in this land.'
+            - '&7Command: &e/lands trust'
+        chunks:
+          required: 144
+          title: 'Claim {req} Chunks'
+          description:
+            - '&7Claim {req} chunks for this land. &c&lRequires a total of &4&l%math_{req}*5%&c&l chunks to level up!'
+            - '&7Command: &e/claim'
+        balance:
+          required: 7500
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited into this land bank.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 600
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -10
+        money:
+          description: '&7{value} gold'
+          value: 1000
+      commands:
+          reached: []
+          down: []
+    7:
+      title: 'Metropolis'
+      requirements:
+        members:
+          required: 55
+          title: 'Trust {req} Players'
+          description:
+            - '&7Trust {req} players in this land.'
+            - '&7Command: &e/lands trust'
+        chunks:
+          required: 165 
+          title: 'Claim {req} Chunks'
+          description:
+            - '&7Claim {req} chunks for this land. &c&lRequires a total of &4&l%math_{req}*5%&c&l chunks to level up!'
+            - '&7Command: &e/claim'
+        balance:
+          required: 10000
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited into this land bank.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 800
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -5
+        money:
+          description: '&7{value} gold'
+          value: 2000
+      commands:
+          reached:
+            - 'broadcast %lands_land% has become a Metropolis, all hail %lands_land_role_leader%!'
+          down: [ ]
+nation:
+  # Enable nation levels?
+  enabled: true
+  # Here you can edit existing or add new nation levels.
+  levels:
+    1:
+      # Set the name of the level.
+      title: 'Dominion'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 20
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -15
+        effects:
+          description: '&a+ Unlock effects: {value}'
+          value: [ ]
+        effects_amount:
+          description: '&a+ Have {value} effects active at once'
+          value: 0
+      commands:
+        reached: [ ]
+        down: [ ]
+    2:
+      title: 'Realm'
+      requirements:
+        lands:
+          required: 4
+          title: '{req} Lands'
+          description:
+            - '&7Invite {req} lands to join your nation'
+            - '&7and let them accept your invite.'
+            - '&7Command: &e/nation trust'
+        members:
+          required: 20
+          title: '{req} unique Players'
+          description:
+            - '&7Have {req} players trusted in total.'
+            - '&7Command: &e/lands trust'
+        balance:
+          required: 3000
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited across all lands.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 40
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -10
+        effects:
+          description: '&a+ Unlock effects: {value}'
+          value: [ ]
+        effects_amount:
+          description: '&a+ Have {value} effects active at once'
+          value: 0
+      commands:
+        reached: [ ]
+        down: [ ]
+    3:
+      title: 'Kingdom'
+      requirements:
+        lands:
+          required: 7
+          title: '{req} Lands'
+          description:
+            - '&7Invite {req} lands to join your nation'
+            - '&7and let them accept your invite.'
+            - '&7Command: &e/nations trust'
+        members:
+          required: 40
+          title: '{req} unique Players'
+          description:
+            - '&7Have {req} players trusted in total.'
+            - '&7Command: &e/lands trust'
+        chunks:
+            required: 0
+            title: 'Claim {req} Chunks'
+            description:
+            - '&7Have {req} claims in total.'
+            - '&7Command: &e/claim'
+        balance:
+          required: 7000
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited across all lands.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 80
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: -2
+        effects:
+          description: '&a+ Unlock effects: {value}'
+          value: [ ]
+        effects_amount:
+          description: '&a+ Have {value} effects active at once'
+          value: 0
+      commands:
+        reached: [ ]
+        down: [ ]
+    4:
+      title: 'Empire'
+      requirements:
+        lands:
+          required: 10
+          title: '{req} Lands'
+          description:
+            - '&7Invite {req} lands to join your nation'
+            - '&7and let them accept your invite.'
+            - '&7Command: &e/nations trust'
+        members:
+          required: 50
+          title: '{req} unique Players'
+          description:
+            - '&7Have {req} players trusted in total.'
+            - '&7Command: &e/lands trust'
+        chunks:
+            required: 0
+            title: 'Claim {req} Chunks'
+            description:
+            - '&7Have {req} claims in total.'
+            - '&7Command: &e/claim'
+        balance:
+          required: 10000
+          title: 'Balance of ${req}'
+          description:
+            - '&7Have ${req} deposited across all lands.'
+            - '&7Command: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7{value} claims'
+          value: 100
+        upkeep:
+          description: '&7{value}% upkeep cost'
+          value: 0
+        effects:
+          description: '&a+ Unlock effects: {value}'
+          value: [ ]
+        effects_amount:
+          description: '&a+ Have {value} effects active at once'
+          value: 0
+      commands:
+        reached: [ ]
+        down: [ ]
