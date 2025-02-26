@@ -1,5 +1,5 @@
 general:
-  # If enabled, lands and nations won't downgrade, if they no longer meet their current level requirements.
+ 
   keep-level: true
 
 land:
@@ -227,12 +227,12 @@ land:
             - 'broadcast %lands_land% has become a Metropolis, all hail %lands_land_role_leader%!'
           down: [ ]
 nation:
-  # Enable nation levels?
+ 
   enabled: true
-  # Here you can edit existing or add new nation levels.
+
   levels:
     1:
-      # Set the name of the level.
+   
       title: 'Dominion'
       attributes:
         chunks:
