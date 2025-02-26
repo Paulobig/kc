@@ -8,7 +8,7 @@ economic:
 
 upkeep:
   per-chunk: 0.214  # 1.5 gold/chunk/week
-  unclaim: false     # Disables automatic chunk unclaiming if upkeep not paid - CORRECT
+  unclaim: false     # Disables automatic chunk unclaiming if upkeep not paid 
   nopay_time: 7d    # 7-day grace period for new Lands 
   upkeep-reminder_time: 1h # Land member reminder frequency - KEEP AS DESIRED
 
@@ -17,4 +17,4 @@ chunk:
 
 economy:
     vault:
-      enabled_10: true # Make sure Vault economy is enabled! - ESSENTIAL
+      enabled_10: true 
