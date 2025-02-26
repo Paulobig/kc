@@ -7,7 +7,7 @@ economic:
     change-cooldown_time: 0.1d # Cooldown for changing tax/upkeep - KEEP AS DESIRED
 
 upkeep:
-  per-chunk: 0.214  # 1.5 gold/chunk/week
+  per-chunk: 0.214  # 1.5 gold/chunk/week, to be adjusted in main Lands config
   unclaim: false     # Disables automatic chunk unclaiming if upkeep not paid 
   nopay_time: 7d    # 7-day grace period for new Lands 
   upkeep-reminder_time: 1h # Land member reminder frequency - KEEP AS DESIRED
